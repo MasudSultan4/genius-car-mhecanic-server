@@ -32,6 +32,10 @@ async function run(){
         res.send(services);
     })
 
+    app.get('/hello',(req,res)=>{
+        res.send('hello rero KU')
+    })
+
     // GET API SINGLE SERVICE DETAILS 
     app.get('/services/:id',async(req,res)=>{
         const id = req.params.id;
