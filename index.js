@@ -32,9 +32,7 @@ async function run(){
         res.send(services);
     })
 
-    app.get('/hello',(req,res)=>{
-        res.send('hello rero KU')
-    })
+   
 
     // GET API SINGLE SERVICE DETAILS 
     app.get('/services/:id',async(req,res)=>{
@@ -75,6 +73,10 @@ run().catch(console.dir)
 // check port 
 app.get('/', (req,res) => {
 res.send("Genius car is running")
+})
+
+app.get('/hello',(req,res)=>{
+    res.send('hello rero KU')
 })
 
 // set port 
